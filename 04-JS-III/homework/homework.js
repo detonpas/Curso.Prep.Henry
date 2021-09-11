@@ -194,16 +194,16 @@ function breakStatement(numero) {
   // Tu código:
   let arr = [];
   let num = numero;
-  let interr = false;
+  let interruptions = false;
   for (let i = 0 ; i < 10 ; i++){
     num += 2;
     if (num === i){
-      interr = true;
+      interruptions = true;
       break;
     }
     arr.push(num);
   }
-  if (interr) return 'Se interrumpió la ejecución';
+  if (interruptions) return 'Se interrumpió la ejecución';
   else return arr;
 }
 
